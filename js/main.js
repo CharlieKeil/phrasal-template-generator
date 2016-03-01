@@ -2,40 +2,24 @@ var storyTime = 'Let’s make a story together!';
 
 alert(storyTime);
 
-var colour ='A colour (orange, indigo, etc.)';
+var colour = prompt('A colour (orange, indigo, etc.)');
 
-prompt(colour);
+var creature = prompt('A creature (dragon, moth, etc.)');
 
-var creature ='A creature (dragon, moth, etc.)';
+var adjective = prompt('An adjective (beautiful, super, etc.)');
 
-prompt(creature);
+var verbed = prompt('A past tense verb (ran, burped, etc.)');
 
-var adjective ='An adjective (beautiful, super, etc.)';
+var list = prompt('Which story would you like?\na) Snacking\nb) Escaping\nc) Winning');
 
-prompt(adjective);
+if(list == 'a') {
+  document.write('After snacking on ' + adjective + 'treats, the ' + colour + 'bellied ' + creature + verbed + 'for hours.')
+}
 
-var past ='A past tense verb (ran, burped, etc.)';
+if(list == 'b') {
+  document.write('Ameilia ' + verbed + 'through the ' + adjective + colour + 'nebula escaping the space ' + creature + '.')
+}
 
-prompt(past);
-
-var list ='Which story would you like?';
-var snack = 'Snacking';
-var esc = 'Escaping';
-var win = 'Winning';
-var a = ' a) ' + snack;
-var b = ' b) ' + esc;
-var c = ' c) ' + win;
-prompt(list + a + b + c);
-
-document.write('After snacking on' +  adjective + 'treats, the' + colour + 'bellied' + creature + past + 'for hours. Ameilia ' + past + 'through the ' + adjective + colour + 'nebula escaping the space ' + creature + '.' + 'Jackson chose his ' + adjective + ',' + colour + creature + 'card and ' + verbed + 'it to the table knowing he won.');
-
-/*
-
-Enter the letter below:
-
-After snacking on {adjective} treats, the {colour} bellied {creature} {verbed} for hours.
-
-Ameilia {verbed} through the {adjective} {colour} nebula escaping the space {creature}.
-
-Jackson chose his {adjective}, {colour} {creature} card and {verbed} it to the table knowing he won.
-*/
+if(list == 'c') {
+  document.write('Jackson chose his' + adjective + ', ' + colour + creature 'card and ' + verbed + 'it to the table knowing he won.')
+}
